@@ -12,6 +12,10 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+body::selection{
+    background-color:#00d2ff;
+}
+
 header {
     background: rgba(30, 30, 30, 0.95);
     display: flex;
@@ -159,6 +163,70 @@ header {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.section-3{
+    display: flex;
+    width: 75%;
+    margin: 50px auto;
+    gap: 150px;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.section-3 img{
+    width: calc(50% - 0px);
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-3 img:hover{
+    transform: translateX(30px);
+    box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.4);
+}
+
+.section-3 .text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section-3 .text h1{
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.section-3 .button:hover{
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.section-3 .button:active{
+    transform: translateY(0px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.section-3 .text p{
+    font-size: 1.8rem;
+}
+
+.section-3 .button{
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    animation: gradient 3s ease infinite;
+    padding: 16px 16px;
+    margin-top: 16px;
+    box-sizing: content-box;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    width: 70%;
+    margin: 16px auto;
+    font-size: 24px;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
     header {
         flex-wrap: wrap;
@@ -177,4 +245,36 @@ header {
         width: 95%;
         font-size: 2.2rem;
     }
+    .section-2{
+        width: 100%;
+        margin: 5px auto;
+        text-align: left;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .section-2 .text{
+        margin: 5px auto;
+    }
+    .section-2{
+        font-size: 1rem;
+    }
+
+    .section-2 .button{
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .section-2 img{
+        width: 95%;
+        margin: 10px auto;
+        transition: none;
+    }
+
+    .section-2 img:hover{
+        transform: none;
+        box-shadow: none;
+    }
+
+
 }

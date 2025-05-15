@@ -12,8 +12,8 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-body::selection{
-    background-color:#00d2ff;
+body::selection {
+    background-color: #00d2ff;
 }
 
 header {
@@ -68,8 +68,6 @@ header {
     padding: 20px;
     animation: gradient 3s ease infinite;
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
-
-
 }
 
 .section-1 h1 {
@@ -90,36 +88,40 @@ header {
     animation: gradient 3s ease infinite;
 }
 
-
-
 @keyframes gradient {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-
-.section-2{
+/* Стили для блока Нейросети (увеличенный и выделенный) */
+.section-2 {
     display: flex;
-    width: 75%;
-    margin: 50px auto;
-    gap: 150px;
-    
+    width: 85%;
+    margin: 100px auto;
+    gap: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: pulse 8s ease-in-out infinite;
 }
 
-.section-2 img{
+.section-2 img {
     width: calc(50% - 0px);
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
 }
 
-.section-2 img:hover{
+.section-2 img:hover {
     transform: translateX(30px);
     box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.4);
 }
 
-.section-2 .text{
+.section-2 .text {
     margin-top: 80px;
     text-align: center;
     display: flex;
@@ -127,104 +129,158 @@ header {
     gap: 16px;
 }
 
-.section-2 .text h1{
-    font-size: 3.2rem;
-    text-align: center;
+.section-2 .text h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
 }
 
-.section-2 .button:hover{
-    transform: translateY(-5px);
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+.section-2 .text p {
+    font-size: 2rem;
+    line-height: 1.6;
 }
 
-.section-2 .button:active{
-    transform: translateY(0px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-
-}
-
-.section-2 .text p{
-    font-size: 1.8rem;
-}
-
-.section-2 .button{
+.section-2 .button {
     background: linear-gradient(135deg, #3a7bd5, #00d2ff);
     animation: gradient 3s ease infinite;
-    padding: 16px 16px;
-    margin-top: 16px;
+    padding: 20px;
+    margin-top: 30px;
     box-sizing: content-box;
     border-radius: 25px;
     color: white;
     text-decoration: none;
-    width: 70%;
+    width: 60%;
     margin: 16px auto;
-    font-size: 24px;
+    font-size: 1.8rem;
     transition: all 0.25s ease-in-out;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.section-3{
-    display: flex;
-    width: 75%;
-    margin: 50px auto;
-    gap: 150px;
-    align-items: center;
-    margin-top: 250px;
+.section-2 .button:hover {
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
 }
 
-.section-3 img{
+.section-2 .button:active {
+    transform: translateY(0px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для блока Регистрации (менее выделенный) */
+.section-3 {
+    display: flex;
+    width: 70%;
+    margin: 50px auto;
+    gap: 80px;
+    align-items: center;
+    margin-top: 250px;
+    padding: 30px;
+}
+
+.section-3 img {
     width: calc(50% - 0px);
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
 }
 
-.section-3 img:hover{
+.section-3 img:hover {
     transform: translateX(30px);
     box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.4);
 }
 
-.section-3 .text{
+.section-3 .text {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.section-3 .text h1{
-    font-size: 3.2rem;
+.section-3 .text h1 {
+    font-size: 2.8rem;
     text-align: center;
 }
 
-.section-3 .button:hover{
-    transform: translateY(-5px);
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+.section-3 .text p {
+    font-size: 1.6rem;
+    color: #666;
 }
 
-.section-3 .button:active{
-    transform: translateY(0px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-
-}
-
-.section-3 .text p{
-    font-size: 1.8rem;
-}
-
-.section-3 .button{
-    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
-    animation: gradient 3s ease infinite;
-    padding: 16px 16px;
+.section-3 .button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 15px;
     margin-top: 16px;
     box-sizing: content-box;
     border-radius: 25px;
     color: white;
     text-decoration: none;
-    width: 70%;
+    width: 80%;
     margin: 16px auto;
-    font-size: 24px;
+    font-size: 1.5rem;
     transition: all 0.25s ease-in-out;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}
+
+.section-3 .button:hover {
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.section-3 .button:active {
+    transform: translateY(0px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация пульсации для section-2 */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+footer {
+    background: rgba(30, 30, 30, 0.95);
+    padding: 50px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.55);
+    color: white;
+}
+
+footer h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    background: rgba(80, 140, 200, 0.85);
+    border-radius: 25px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.55);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+    background: rgba(110, 170, 230, 1);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
@@ -245,36 +301,79 @@ header {
         width: 95%;
         font-size: 2.2rem;
     }
-    .section-2{
-        width: 100%;
-        margin: 5px auto;
-        text-align: left;
-        flex-direction: column-reverse;
-        gap: 0;
-    }
-
-    .section-2 .text{
-        margin: 5px auto;
-    }
-    .section-2{
-        font-size: 1rem;
-    }
-
-    .section-2 .button{
+    
+    .section-2 {
         width: 95%;
+        margin: 20px auto;
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 20px;
+        animation: none;
+    }
+
+    .section-2 .text {
+        margin: 0;
+    }
+
+    .section-2 .text h1 {
+        font-size: 2.2rem;
+    }
+
+    .section-2 .text p {
+        font-size: 1.4rem;
+    }
+
+    .section-2 .button {
+        width: 95%;
+        font-size: 1.4rem;
         box-sizing: border-box;
     }
 
-    .section-2 img{
+    .section-2 img {
         width: 95%;
-        margin: 10px auto;
-        transition: none;
+        margin: 0 auto;
     }
 
-    .section-2 img:hover{
+    .section-2 img:hover {
         transform: none;
-        box-shadow: none;
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .section-3 {
+        width: 95%;
+        margin: 20px auto;
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 20px;
+        margin-top: 50px;
     }
 
+    .section-3 .text h1 {
+        font-size: 2.2rem;
+    }
 
+    .section-3 .text p {
+        font-size: 1.4rem;
+    }
+
+    .section-3 .button {
+        width: 95%;
+        font-size: 1.4rem;
+    }
+
+    .section-3 img {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .section-3 img:hover {
+        transform: none;
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    footer .buttons {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
 }

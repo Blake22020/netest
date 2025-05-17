@@ -118,6 +118,11 @@ img{
 @media (max-width: 768px){
     body{
         overflow: hidden;
+        width: 100%;
+    }
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
     }
     header h1{
         text-align: center;
@@ -155,6 +160,8 @@ img{
     }
     img{
         width: 100%;
+        flex: 0;
+        margin: 0;
     }
 
     .text{
@@ -162,4 +169,5 @@ img{
         width: 100%;
         padding: 25px;
     }
+    
 }

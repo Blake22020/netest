@@ -117,13 +117,10 @@ header {
 }
 
 .name-gradient {
-    background: linear-gradient(90deg, #ff8a00, #e52e71, #b36cff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+
+    
     text-transform: uppercase;
     background-size: 200% auto;
-    animation: gradient 6s ease infinite, pulse 2s ease infinite alternate;
 }
 
 @keyframes gradient {

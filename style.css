@@ -151,6 +151,8 @@ header {
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     position: relative;
     overflow: hidden;
+    align-items: center;
+
 }
 
 .section-2:hover {
@@ -188,6 +190,8 @@ header {
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
     filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
     z-index: 1;
+    flex:none;
+    max-height: 700px;
     animation: float 4s ease-in-out infinite;
 }
 
@@ -457,6 +461,23 @@ footer p {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 1850px){
+    .section-2{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .section-2 img{
+        min-width: 90%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .section-3{
+        flex-direction: column-reverse;
     }
 }
 

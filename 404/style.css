@@ -23,6 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px 30px 12px 30px;
+    align-items: center;
 }
 
 .head-buttons{
@@ -122,5 +123,57 @@ header {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media (max-width: 2000px){
+    .img img{
+        min-width: 50% !important;
+    }
+}
+
+@media (max-width: 1280px){
+    .img img{
+        min-width: 70% !important;
+    }
+
+    .error{
+        font-size: 30rem;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .error,
+    .img,
+    .okak,
+    .head-button {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    .head-button:hover {
+        transform: none !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+    }
+
+
+    .img img{
+        min-width: 70% !important;
+    }
+
+    .error{
+        font-size: 25rem;
+    }
+
+}
+
+@media (max-width: 768px){
+    .error{
+        margin-top: 80px;
+        font-size: 10rem;
+    }
+    .img img{
+        min-width: 100% !important;
     }
 }

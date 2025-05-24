@@ -78,7 +78,11 @@ header {
     left: 100%;
 }
 
-/* Первая секция с параллакс-эффектом */
+.animate__delay-4s{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+
+}
+
 .section-1 {
     display: flex;
     height: 100vh;
@@ -134,7 +138,6 @@ header {
     100% { transform: scale(1.05); }
 }
 
-/* Стили для блока Нейросети */
 .section-2 {
     display: flex;
     width: 85%;
@@ -262,7 +265,6 @@ header {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Стили для блока Регистрации */
 .section-3 {
     display: flex;
     width: 70%;
@@ -357,7 +359,6 @@ header {
     left: 100%;
 }
 
-/* Футер с волной */
 footer {
     background: rgba(30, 30, 30, 0.95);
     padding: 50px;
@@ -385,7 +386,7 @@ footer::before {
         background-position-x: 0;
     }
     100% {
-        background-position-x: 1200px; /* Длина SVG волны */
+        background-position-x: 1200px; 
     }
 }
 
@@ -447,7 +448,6 @@ footer p {
     animation: fadeIn 1.2s ease-out;
 }
 
-/* Анимации */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

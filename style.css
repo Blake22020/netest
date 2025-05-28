@@ -509,9 +509,9 @@ footer p {
 	}
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
 	header {
+		position: absolute;
 		flex-wrap: wrap;
 		padding: 10px 5px;
 	}

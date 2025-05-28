@@ -76,9 +76,15 @@ header h1 {
 }
 
 .head-button:hover {
-	background: #0069d9;
+	background: rgb(0, 105, 217);
 	transform: translateY(-5px);
 	box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+}
+
+.head-button:active {
+	background: rgba(0, 88, 200, 1);
+	transform: translateY(0);
+	box-shadow: 5px 16px 35px rgba(0, 123, 255, 0.4);
 }
 
 @keyframes up2 {
@@ -376,6 +382,11 @@ main {
 .section-4 .card a:hover {
 	transform: translateY(-3px);
 	box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.section-4 .card a:active {
+	transform: translateY(0px);
+	box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);
 }
 
 @keyframes cardEntrance {
